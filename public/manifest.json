@@ -1,0 +1,15 @@
+{
+  "short_name": "Joomag",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "64x128",
+      "type": "svg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
