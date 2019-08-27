@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import theme from '../../config/themes/palletes'
-import { mediaxsPlusAndDown } from '../../config/config-style'
+import { mediaxsPlusAndDown, mediasmAndDown, xsPlusMin } from '../../config/config-style'
 
 
 export const Wrapper = (styled.div`
@@ -46,40 +46,40 @@ export const TopContainer = (styled.div`
     flex-direction: row;
     margin-bottom: 80px;
 
-    
-`)
-
-
-export const Left = (styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @media ${xsPlusMin}{
+        margin-bottom: 40px;
+    }
 
     .column_1{
-        width: 100%;
+        width: 25%;
         display: flex;
         flex-direction: column;
+        @media ${mediasmAndDown} {
+            width: 35%;
+        }
     }
 
 
     .column_2{
-        width: 100%;
+        width: 25%;
         display: flex;
         flex-direction: column;
+        @media ${mediasmAndDown} {
+            width: 35%;
+        }
     }
 
-    .form{
+    .obj_cont{
+        width: 45%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media ${mediasmAndDown} {
+            flex-direction: column;
+            width: 30%;
+        }
     }
-
-`)
-
-export const Right = (styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
 
     .column_3{
         width: 100%;
@@ -90,13 +90,22 @@ export const Right = (styled.div`
     .column_4{
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .form{
         display: flex;
         flex-direction: column;
         margin-bottom: 55px;
+    }
+
+    .form9{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 55px;
+        @media ${mediasmAndDown} {
+            margin: 0px
+        }
     }
 
     .form_2{
@@ -132,7 +141,12 @@ export const Right = (styled.div`
         height: 16px;
         object-fit: cover;
     }
+    
 `)
+
+
+
+
 
 
 export const BottomContainer = (styled.div`
@@ -141,9 +155,25 @@ export const BottomContainer = (styled.div`
     flex-direction: row;
     justify-content: space-between;
     
+    @media ${mediaxsPlusAndDown}{
+        flex-direction: column-reverse;
+    }
+    
 .one_line{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    @media ${mediaxsPlusAndDown}{
+        margin-bottom: 40px;
+    }
+}
+
+.stylish{
+    font-family: Proxima Nova;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2863FD;
 }
 
 .inline1{

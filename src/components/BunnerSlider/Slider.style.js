@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaxsPlus, mediaxsPlusAndUpToUp } from '../../config/config-style'
 
 export const Wrap = styled.div`
 .each-slide div{
@@ -9,6 +10,13 @@ export const Wrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
+  @media only screen and (min-width: 460px) and (max-width: 768px){
+    height: 600px;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 468px){
+    height: 800px;
+  }
 }
 .each-slide img{
   z-index: 2;
@@ -25,12 +33,23 @@ export const Wrap = styled.div`
   padding 0;
 }
 .nav{
+ 
   background: white !important;
   border: 1px solid #E5E5E5;
+  @media only screen and (min-width: 320px) and (max-width: 468px){
+    background: transparent !important;
+    border: none;
+ 
+  }
 }
+
+
 .nav:first-of-type span{
   border-bottom: 2px solid #2836FD;
   border-left: 2px solid #2836FD;
+  @media only screen and (min-width: 320px) and (max-width: 468px){
+    border: none;
+  }
   
 }
 
@@ -41,6 +60,9 @@ export const Wrap = styled.div`
 .nav:last-of-type span{
   border-top: 2px solid #2836FD;
   border-right: 2px solid #2836FD;
+  @media only screen and (min-width: 320px) and (max-width: 468px){
+    border: none;
+  }
 }
 
 .react-slideshow-container + div.indicators{
@@ -64,6 +86,12 @@ export const Wrap = styled.div`
   line-height: 27px;
   color: #FFFFFF;
     margin-bottom: 40px;
+    @media ${mediaxsPlus}{
+      margin-bottom: 30px;
+    }
+    @media ${mediaxsPlusAndUpToUp}{
+      margin-bottom: 15px;
+  }
 }
 
 .content h3 {
@@ -78,13 +106,22 @@ export const Wrap = styled.div`
 }
 
 
+
+
 .react-slideshow-container div:first-child{
   right: 20px;
   position: relative;
+  @media only screen and (min-width: 320px) and (max-width: 468px){  
+  }
 }
 
 .react-slideshow-container div:last-child{
   left: 20px;
   position: relative;
+  @media only screen and (min-width: 320px) and (max-width: 468px){  
+  }
+
 }
+
+
 `;

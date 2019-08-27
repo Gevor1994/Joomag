@@ -25,3 +25,4 @@ export const mediaxsEdgeAndDown = `screen and (max-width: ${xsEdgeMax}px)`;
 export const mediaxsPlusAndDown = `screen and (max-width: ${xsPlusMax}px)`;
 export const mediasmAndDown = `screen and (max-width: ${smMax}px)`;
 export const mediamdAndDown = `screen and (max-width: ${mdMax}px)`;
+export const mediaxsPlusAndUpToUp = `screen and (max-width: ${xsPlusMin}px)`;

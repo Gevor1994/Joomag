@@ -25,8 +25,10 @@ export class Home extends Component {
                             <h1 className="h1">Pushing the Boundaries of Customer Service</h1>
                             <p>Fast, reliable, and dependable.</p>
                         </div>
-                        <div className="img_contain">
-                            <img src={hero_image} />
+                        <div className="wuah">
+                            <div className="img_contain">
+                                <img src={hero_image} />
+                            </div>
                         </div>
                     </Container>
                 </Wrapper>
@@ -39,31 +41,37 @@ export class Home extends Component {
                 </WhatWeLove>
                 <OffersList>
                     <div className="list">
-                        <div className="offer">
-                            <div className="img_contain2">
-                                <img src={live_chat_support} alt="live_chat_support" />
+                        <div className="first8">
+                            <div className="offer">
+                                <div className="img_contain2">
+                                    <img src={live_chat_support} alt="live_chat_support" />
+                                </div>
+                                <h4 className="h4">Live Chat Support</h4>
+                                <p className="p">Our working hours are Mon-Fri, 7AM-7PM EST. Rest assured, we'll be there when you need us.</p>
                             </div>
-                            <h4 className="h4">Live Chat Support</h4>
-                            <p className="p">Our working hours are Mon-Fri, 7AM-7PM EST. Rest assured, we'll be there when you need us.</p>
+                            <div className="offer">
+                                <div className="img_contain2">
+                                    <img src={quick_response_times} alt="live_chat_support" />
+                                </div>
+                                <h4 className="h4">Quick Response Times</h4>
+                                <p className="p">3 minutes.That's the longest you'll ever have to wait before you hear back from us.</p>
+                            </div>
                         </div>
-                        <div className="offer">
-                            <div className="img_contain">
-                                <img src={quick_response_times} alt="live_chat_support" />
+                        <div className="first9">
+                            <div className="offer">
+                                <div className="img_contain2">
+                                    <img src={a_team_full_of_talent} alt="live_chat_support" />
+                                </div>
+                                <h4 className="h4">A Team Full of Talent</h4>
+                                <p className="p">We only hire the best. Each team member has the technical skills and knowledge to help you make the most of Joomag. </p>
                             </div>
-                            <h4 className="h4">Quick Response Times</h4>
-                            <p className="p">3 minutes.That's the longest you'll ever have to wait before you hear back from us.</p>
-                        </div> <div className="offer">
-                            <div className="img_contain">
-                                <img src={a_team_full_of_talent} alt="live_chat_support" />
+                            <div className="offer">
+                                <div className="img_contain2">
+                                    <img src={continuous_improvement} alt="live_chat_support" />
+                                </div>
+                                <h4 className="h4">Continuous Improvement</h4>
+                                <p className="p">We listen. Give us your feedback and we'll use it to make our product even better. </p>
                             </div>
-                            <h4 className="h4">A Team Full of Talent</h4>
-                            <p className="p">We only hire the best. Each team member has the technical skills and knowledge to help you make the most of Joomag. </p>
-                        </div> <div className="offer">
-                            <div className="img_contain">
-                                <img src={continuous_improvement} alt="live_chat_support" />
-                            </div>
-                            <h4 className="h4">Continuous Improvement</h4>
-                            <p className="p">We listen. Give us your feedback and we'll use it to make our product even better. </p>
                         </div>
                     </div>
                 </OffersList>

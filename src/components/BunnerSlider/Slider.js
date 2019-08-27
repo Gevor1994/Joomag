@@ -7,7 +7,7 @@ import back from '../../svgs/back.png'
 
 const properties = {
     duration: 7000,
-    transitionDuration: 1500,
+    transitionDuration: 800,
     infinite: true,
     indicators: true,
     arrows: true

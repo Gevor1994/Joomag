@@ -1,3 +1,3 @@
 import ViewMobile from './ViewMobile'
 
-export default ViewMobile;
+export const ViewMobile;

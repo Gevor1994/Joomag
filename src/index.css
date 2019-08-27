@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +10,156 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.ant-dropdown-menu-vertical{
+  margin-top: 20px;
+  border-radius: 0px;
+}
+
+.ant-drawer-content-wrapper{
+  width: 100% !important;
+  margin-top: 65px;
+  
+}
+
+.ant-drawer-content{
+  background: linear-gradient(280.81deg, #000000 3.28%, #002347 68.98%, #002B58 100%);
+}
+
+.ant-drawer-mask{
+  opacity: 0
+}
+
+.ant-drawer-body{
+  padding: 40px 0px 0px 20px;
+}
+
+.ant-drawer-body p{
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.inline{
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}   
+
+.inline p{
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: 0px !important;
+
+}
+
+
+svg{
+  color: white;
+}
+
+.bar_tytle{
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 19px;
+  color: white ;
+  margin-right: 40px;
+}
+
+
+
+
+.inline{
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+}
+
+
+.text_style {
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.ant-collapse-borderless{
+  background: transparent;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+  padding-left: 0px;
+  
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+  right: 78%;
+  left: 0%;
+}
+
+.ant-collapse-item div:first-child{
+  color: white;
+}
+
+
+.ant-collapse-content > .ant-collapse-content-box{
+  padding: 0px;
+  font-family: Proxima Nova;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ACB4BF;
+
+}
+
+.ant-collapse-borderless > .ant-collapse-item:last-child{
+  border: none;
+
+}
+
+.ant-collapse  {
+  padding-bottom: 25px;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ACB4BF;
+}
+
+
+.ant-collapse-borderless > .ant-collapse-item:last-child .ant-collapse-header{
+  color: white;
+  font-family: Proxima Nova;
+  font-size: 16px;
+line-height: 19px;
+}
+
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box {
+  padding-left: 32px;
+
+}
+
+.ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content > .ant-collapse-content-box h1{
+  font-family: Proxima Nova;
+font-size: 16px;
+line-height: 24px;
+font-weight: bold;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.ant-collapse-content-box div{
+  font-family: Proxima Nova;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+margin-bottom: 20px;
+
 }

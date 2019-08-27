@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import theme from '../config/themes/palletes'
 import rectangle3 from '../svgs/rectangle3.svg'
-
+import { mediaxsPlus, mediaxsPlusAndDown, mediaxsEdgeAndDown } from '../config/config-style'
 
 export const Wrap = (styled.div`
     width: 100%;
@@ -32,11 +32,37 @@ export const Container = (styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @media ${mediaxsPlusAndDown}{
+        flex-direction: column;
+        width: 95%;
+        align-items: flex-start;
+    }
 
     .img_contain{
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: flex-end;
+        @media ${mediaxsPlusAndDown}{
+            width: 70%;
+            justify-content: flex-end;
+        }
+        @media ${mediaxsEdgeAndDown}{
+            width: 100%;
+            justify-content: flex-end;
+        }
+        
+        
+    }
+
+    .wuah{
+        display:flex;
+        width: 50%;
+        @media ${mediaxsPlusAndDown}{
+            width: 100%;
+            justify-content: center;;
+            margin-top: 20px;
+        }
+       
     }
 
     .img_contain img{
@@ -50,6 +76,20 @@ export const Container = (styled.div`
         font-size: 40px;
         line-height: 52px;
         color: ${ theme.styles.colors[7]};
+        @media ${mediaxsPlusAndDown}{
+            width: 90%;
+        }
+    }
+
+    .title p{
+        font-family: Proxima Nova;
+        font-size: 32px;
+        line-height: 45px;
+        color: #FFFFFF;
+        @media ${mediaxsPlusAndDown}{
+            font-size: 24px;
+            line-height: 36px;
+        }
     }
     
     .h1{
@@ -58,6 +98,12 @@ export const Container = (styled.div`
         margin-bottom: 30px;
         color: ${ theme.styles.colors[7]};
         font-size: ${ theme.styles.h1[0]};
+
+        @media ${mediaxsEdgeAndDown}{
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 20px;
+        }
     }
 `)
 
@@ -69,6 +115,9 @@ export const WhatWeLove = (styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media ${mediaxsPlusAndDown}{
+        padding-top: 100px;
+    }
 
 .what_we_love{
     font-family: Proxima Nova;
@@ -76,6 +125,9 @@ export const WhatWeLove = (styled.div`
     line-height: 42px;
     color: ${ theme.styles.colors[4]};
     margin-bottom: 4px;
+    @media ${mediaxsPlusAndDown}{
+        font-size: 24px;
+    }
 }
 
 .helpers{
@@ -84,6 +136,9 @@ export const WhatWeLove = (styled.div`
     line-height: 42px;
     color: ${ theme.styles.colors[8]};
     margin-bottom: 16px;
+    @media ${mediaxsPlusAndDown}{
+        font-size: 24px;
+    }
 }
 
 .box{
@@ -106,7 +161,9 @@ export const OffersList = (styled.div`
     margin-bottom: 140px;
     display: flex;
     justify-content: center;
-
+    @media screen and (max-width: 460px) {
+        margin-bottom: 0px;
+    }
 
 .list{
     width: 80%;
@@ -114,15 +171,55 @@ export const OffersList = (styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media ${mediaxsPlusAndDown}{
+        flex-direction: column;
+    }
 }
+
+.first9{
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media ${mediaxsPlusAndDown}{
+        width: 100%;
+        margin-top: 80px;
+    }
+    @media screen and (max-width: 460px) {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+}
+
+.first8{
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media ${mediaxsPlusAndDown}{
+        width: 100%;
+    }
+    @media screen and (max-width: 460px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 .offer{
-    width:22%;
+    width: 45%;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 460px) {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 80px;
+    }
 }
 
 .img_contain2{
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .h4{
@@ -157,6 +254,13 @@ export const CustomerSucces = (styled.div`
 
 .rectangle div{
     max-width: 42%;
+    @media ${mediaxsPlus}{
+    height: 400px; 
+    max-width: 45%;
+    }
+    @media ${mediaxsEdgeAndDown}{
+           
+    }
 }
 
 .customer_wrap{
@@ -167,12 +271,35 @@ export const CustomerSucces = (styled.div`
     align-items: center;
     position: relative;
     z-index: 2;
+    @media ${mediaxsPlus}{
+        width: 95%;
+    }
+    @media ${mediaxsEdgeAndDown}{
+        flex-direction: column;
+    }
+    @media ${mediaxsEdgeAndDown}{
+        width: 95%;
+    }
+    
 }
 
 .custom_img{
     width: 48%;
     height: 446px;
-
+    @media ${mediaxsPlus}{
+        width: 350px;
+        height: 300px;
+    }
+    @media ${mediaxsEdgeAndDown}{
+        width: 100% ;
+        height: 100%;
+        margin-top: 40px; 
+    }
+    
+    @media  screen and (min-width: 360px) and (max-width: 480px){
+        width: 350px ;
+        height: 350px;
+    }
 }
 
 .custom-img img{
@@ -182,6 +309,9 @@ export const CustomerSucces = (styled.div`
 
 .info_desk{
     width: 48%;
+    @media ${mediaxsEdgeAndDown}{
+        width: 100%    
+    }
 }
 
 img{
@@ -204,6 +334,14 @@ img{
     line-height: 42px;
     font-size: ${ theme.styles.h2[0]};
     color: ${ theme.styles.colors[8]}}
+    @media ${mediaxsPlusAndDown}{
+        font-size: 24px;
+    }
+.h3 span{
+    @media ${mediaxsPlusAndDown}{
+        font-size: 24px;
+    }
+}
 
 .h3{
     width: 100%;
@@ -211,6 +349,9 @@ img{
     font-size: ${ theme.styles.h2[0]};
     line-height: 42px;
     color: ${ theme.styles.colors[4]};
+    @media ${mediaxsPlusAndDown}{
+        font-size: 24px;
+    }
 }
 
 .info_desk p {
@@ -234,8 +375,6 @@ export const ChatNow = (styled.div`
         display: flex;
         justify-content: flex-end;
     }
-    
-
 
     .img_wrapp{
         max-width: 52%;
@@ -258,6 +397,10 @@ export const ChatNow = (styled.div`
         padding: 5% 0px;
     }
 
+    .gradient div:hover{
+        background: #0741B0; 
+    }
+
     .h2{
         font-family: Proxima Nova;
         line-height: 42px;
@@ -265,7 +408,15 @@ export const ChatNow = (styled.div`
         color: ${ theme.styles.colors[7]};
         font-weight: initial;
         margin-bottom: 40px;
-
+        @media ${mediaxsPlusAndDown}{
+            font-size: 24px;
+        }
+        @media ${mediaxsEdgeAndDown}{
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: 460px){
+            font-size: 20px;
+        }
     }
     
     .h3{
@@ -275,7 +426,12 @@ export const ChatNow = (styled.div`
         line-height: 42px;
         color: ${ theme.styles.colors[7]};
         font-weight: bold;
-
+        @media ${mediaxsPlusAndDown}{
+            font-size: 24px;
+        }
+        @media screen and (max-width: 460px){
+            font-size: 20px;
+        }
     }
 `)
 
@@ -293,6 +449,9 @@ export const StyledButton = (styled.div`
     line-height: 19px;
     color: ${ theme.styles.colors[7]};
 
+    @media ${mediaxsEdgeAndDown}{
+margin-bottom: 20px;    }
+
 `)
 
 export const Comments = (styled.div`
@@ -308,6 +467,15 @@ export const Comments = (styled.div`
     color: ${ theme.styles.colors[4]};
     font-weight: initial;
     margin-bottom: 16px;
+    @media ${mediaxsPlusAndDown}{
+        font-size: 24px;
+    }
+}
+
+.global_h2 span{
+    @media ${mediaxsPlusAndDown}{
+        font-size: 24px;
+    }
 }
 
 .global_h3{
@@ -321,6 +489,9 @@ export const Comments = (styled.div`
     width: 80%;
     display: flex;
     flex-direction: column;
+    @media ${mediaxsPlusAndDown}{
+        width: 90%;
+    }
 }
 
 .global_hr{
@@ -343,10 +514,17 @@ export const SliderWrapper = (styled.div`
     background-image: url(${rectangle3});
     background-repeat: no-repeat;
 
+      @media only screen and (min-width: 460px) and (max-width: 768px){
+        height: 600px;
+      }
+      @media only screen and (min-width: 320px) and (max-width: 468px){
+        height: 800px;
+      }
+    
     img{
-        width: 50%;
+        width: 0;
         height: 100%;
-        object-fit: cover;
+      
     }
 
     .rectangle{
@@ -360,7 +538,6 @@ export const SliderWrapper = (styled.div`
         position: relative;
     }
 
-   
 
     .slider_wrap{
         width: 100%;
@@ -371,5 +548,11 @@ export const SliderWrapper = (styled.div`
 
     .sliderion{
         width: 75%;
+        @media ${mediaxsPlus}{
+            width: 90%;
+        }
+        @media only screen and (min-width: 320px) and (max-width: 468px){
+            width: 95%;
+        }
     }
 `)
